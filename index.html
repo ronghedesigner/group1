@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用摄影记录生活</title>
+<style>
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, lable, textarea, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+#header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color:#000;
+}
+#nav {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+#logo{
+	float:left;
+}
+#nav ul {
+	list-style-type: none;
+	padding-left: 240px;
+}
+#nav li {
+	float: left;
+}
+#nav li a:link, #nav a:visited {
+	color:#CCC;
+	display: block;
+	text-align: center;
+	padding: 10px 40px;
+	text-decoration: none;
+}
+#nav li a:hover, #nav li a.current {
+	color:#FFF;
+	text-decoration: none;
+}
+#login {
+	color: #FFF;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+	margin-top: 10px;
+	text-align: right;
+}
+#login a:link, #login a:visited {
+	color: #CCC;
+	text-decoration: none;
+}
+#login a:hover {
+	color:#FFF;
+}
+.cover {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/top.jpg);
+	background-size: cover;
+}
+.title {
+	width: 50%;
+	padding: 50px 20px;
+	background-color: rgba(255,255,255,0.2);
+	color: #FFF;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+}
+.title h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.title h2 {
+	text-align: right;
+	font-weight: normal;
+}
+.chapter-title {
+	margin:50px 0;
+	font-family: "微软雅黑", "黑体", "宋体";
+	font-size: 32px;
+	text-align: center;
+}
+.row{
+	margin:15px;
+	display:flex;
+}
+.pic{
+	flex:1;
+	height:400px;
+	margin-right:20px;
+	background-size:cover;
+	background-position:center center;
+	transition:all 0.5s;
+	position:relative;
+}
+.pic a{
+	position:absolute;
+	width:100%;
+	height:100%;
+	display:block;
+}
+.pic:last-child{
+	margin-right:0;
+}
+.pic:hover{
+	flex:2;
+}
+.pic:hover .info{
+	opacity:1;
+}
+
+.info{
+	position:absolute;
+	bottom:0;
+	left:20px;
+	color:#FFF;
+	opacity:0;
+	transition:all 0.5s;
+}
+.pic1{
+	background-image:url(images/view/01.jpg);
+}
+.pic2{
+	background-image:url(images/view/02.jpg);
+}
+.pic3{
+	background-image:url(images/view/03.jpg);
+}
+.pic4{
+	background-image:url(images/portrait/04.jpg);
+}
+.pic5{
+	background-image:url(images/portrait/01.jpg);
+}
+.pic6{
+	background-image:url(images/portrait/02.jpg);
+}
+.pic7{
+	background-image:url(images/portrait/03.jpg);
+}
+.pic8{
+	background-image:url(images/portrait/04.jpg);
+}
+
+.pic9{
+	background-image:url(images/build/01.jpg);
+}
+.pic10{
+	background-image:url(images/build/02.jpg);
+}
+.pic11{
+	background-image:url(images/view/11.jpg);
+}
+.pic12{
+	background-image:url(images/view/12.jpg);
+}
+footer{
+	color:#FFF;
+	background-color:#333;
+	text-align:center;
+	padding:50px 0;	
+}
+</style>
+</head>
+
+<body>
+<div id="header"> 
+  <div id="nav">
+   <div id="logo">
+  	<a href="index.html"><img src="images/logo.png" width="80" height="40" /></a>
+  </div>
+    <ul  class="clearfix">
+       <li><a href="index.html">首页</a></li>
+      <li><a href="view.html">风景</a></li>
+      <li><a href="portrait.html">人像</a></li>
+      <li><a href="build.html">建筑</a></li>
+    </ul>
+    <div id="login"> <a href="#">登录</a> | <a href="#">注册</a> </div>
+  </div>
+</div>
+<div class="cover">
+  <div class="title">
+    <h1>用摄影记录生活</h1>
+    <h2>————发现生活的美</h2>
+  </div>
+</div>
+<div class="chapter-title">风景</div>
+<div class="row"> 
+	<div class="pic pic1">
+    <a href="content1.html">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </a>
+    </div>
+    <div class="pic pic2">
+    <a href="content1.html">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </a>
+    </div>
+    <div class="pic pic3">
+    <a href="content1.html">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </a>
+    </div>
+    <div class="pic pic4">
+   	<a href="content1.html">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </a>
+    </div>
+</div>
+<div class="chapter-title">人像</div>
+<div class="row"> 
+	<div class="pic pic5">
+     <a href="content2.html">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+     </a>
+    </div>
+    <div class="pic pic6">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </div>
+    <div class="pic pic7">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </div>
+    <div class="pic pic8">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </div>
+</div>
+
+<div class="chapter-title">建筑</div>
+<div class="row"> 
+	<div class="pic pic9">
+     <a href="content3.html">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </a>
+    </div>
+    <div class="pic pic10">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </div>
+    <div class="pic pic11">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </div>
+    <div class="pic pic12">
+    	<div class="info">
+            <p>作者:xxxxxxx</p>
+            <p>拍摄日期:xxxxxxx</p>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+Copyright &copy; XXX
+</footer>
+</body>
+</html>

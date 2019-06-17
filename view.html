@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用摄影记录生活</title>
+<style>
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, lable, textarea, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+#header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color:#000;
+}
+#nav {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+#logo{
+	float:left;
+}
+#nav ul {
+	list-style-type: none;
+	padding-left: 240px;
+}
+#nav li {
+	float: left;
+}
+#nav li a:link, #nav a:visited {
+	color:#CCC;
+	display: block;
+	text-align: center;
+	padding: 10px 40px;
+	text-decoration: none;
+}
+#nav li a:hover, #nav li a.current {
+	color:#FFF;
+	text-decoration: none;
+}
+#login {
+	color: #FFF;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+	margin-top: 10px;
+	text-align: right;
+}
+#login a:link, #login a:visited {
+	color: #CCC;
+	text-decoration: none;
+}
+#login a:hover {
+	color:#FFF;
+}
+.cover {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/top.jpg);
+	background-size: cover;
+}
+.title {
+	width: 50%;
+	padding: 50px 20px;
+	background-color: rgba(255,255,255,0.2);
+	color: #FFF;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+}
+.title h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.title h2 {
+	text-align: right;
+	font-weight: normal;
+}
+.chapter-title {
+	margin:50px 0;
+	font-family: "微软雅黑", "黑体", "宋体";
+	font-size: 32px;
+	text-align: center;
+}
+#container{
+	margin:0 15px;
+	display:flex;
+}
+.column{
+	flex:1;
+	margin-right:10px;
+}
+.column:last-child{
+	margin-right:0;
+}
+.column img{
+	width:100%;
+	padding:7px;
+	background-color:#FFF;
+	box-sizing:border-box;
+	height:auto;
+	vertical-align:bottom;
+	margin-top:15px;
+	cursor:pointer;
+
+	transition:all 0.5s;
+}
+.column img:hover{
+	box-shadow:0 0 10px 0 rgba(0,0,0,0.5);
+}
+footer{
+	color:#FFF;
+	background-color:#333;
+	text-align:center;
+	padding:50px 0;	
+}
+</style>
+</head>
+
+<body>
+<div id="header"> 
+  <div id="nav">
+   <div id="logo">
+  	<a href="index.html"><img src="images/logo.png" width="80" height="40" /></a>
+  </div>
+    <ul  class="clearfix">
+       <li><a href="index.html">首页</a></li>
+      <li><a href="view.html">风景</a></li>
+      <li><a href="portrait.html">人像</a></li>
+      <li><a href="build.html">建筑</a></li>
+    </ul>
+    <div id="login"> <a href="#">登录</a> | <a href="#">注册</a> </div>
+  </div>
+</div>
+<div class="cover">
+  <div class="title">
+    <h1>风景</h1>
+  </div>
+</div>
+
+<div id="container">
+  
+        <div class="column"> <a href="content1.html"><img src="images/view/01.jpg" /></a>
+            <img src="images/view/02.jpg" />
+            <img src="images/view/03.jpg" />
+            <img src="images/view/04.jpg" />
+            <img src="images/view/13.jpg" />
+            
+        </div>
+        
+        <div class="column">
+       	  <img src="images/view/15.jpg" />
+          <img src="images/view/16.jpg" />
+          <img src="images/view/18.jpg" />
+          <img src="images/build/04.jpg" />
+        
+        </div>
+        
+        <div class="column">
+       	  <img src="images/view/22.jpg" />
+          <img src="images/view/23.jpg" />
+          <img src="images/view/01.jpg" />
+          <img src="images/view/02.jpg" />
+          <img src="images/view/03.jpg" />
+        </div>
+        
+        <div class="column">
+       	  <img src="images/view/04.jpg" />
+          <img src="images/view/13.jpg" />
+            <img src="images/view/15.jpg" />
+            <img src="images/view/16.jpg" />
+        </div>
+  
+
+</div>
+
+
+<footer>
+Copyright &copy; XXX
+</footer>
+</body>
+</html>

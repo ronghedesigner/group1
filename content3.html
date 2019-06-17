@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>建筑</title>
+<link rel="stylesheet" type="text/css" href="css/aos.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+<style>
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, lable, textarea, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+#header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color:#000;
+}
+#nav {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+#logo{
+	float:left;
+}
+#nav ul {
+	list-style-type: none;
+	padding-left: 240px;
+}
+#nav li {
+	float: left;
+}
+#nav li a:link, #nav a:visited {
+	color:#CCC;
+	display: block;
+	text-align: center;
+	padding: 10px 40px;
+	text-decoration: none;
+}
+#nav li a:hover, #nav li a.current {
+	color:#FFF;
+	text-decoration: none;
+}
+#login {
+	color: #FFF;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+	margin-top: 10px;
+	text-align: right;
+}
+#login a:link, #login a:visited {
+	color: #CCC;
+	text-decoration: none;
+}
+#login a:hover {
+	color:#FFF;
+}
+
+#container{
+	width:1000px;
+	margin:90px auto 0;
+}
+#content{
+	width:700px;
+	float:left;
+}
+#content img{
+	width:100%;
+	height:auto;
+	margin:10px 0;
+}
+#content p{
+	line-height:2;
+}
+#author{
+	width:280px;
+	float:right;
+	text-align:center;
+}
+#author img{
+	border-radius:50%;
+	border:1px solid #999;
+}
+footer{
+	color:#FFF;
+	background-color:#333;
+	text-align:center;
+	padding:50px 0;	
+}
+</style>
+</head>
+
+<body>
+<div id="header">
+ 
+  <div id="nav" class="clearfix">
+   <div id="logo">
+  	<img src="images/logo.png" width="80" height="40" />
+  </div>
+    <ul  class="clearfix">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="view.html">风景</a></li>
+      <li><a href="portrait.html">人像</a></li>
+      <li><a href="build.html">建筑</a></li>
+    </ul>
+    <div id="login"> <a href="#">登录</a> | <a href="#">注册</a> </div>
+  </div>
+</div>
+
+<div id="container" class="clearfix">
+<div id="content"> <a href="images/build/01.jpg"  data-fancybox="gallery" data-caption="建筑摄影<br>by xxxxx"><img src="images/build/01.jpg" width="515" height="720" data-aos="fade-up"/></a>
+  <a href="images/build/02.jpg" data-fancybox="gallery" data-caption="建筑摄影<br>by xxxxx"><img src="images/build/02.jpg" width="540" height="720" data-aos="fade-up"/></a>
+  <a href="images/build/03.jpg" data-fancybox="gallery" data-caption="建筑摄影<br>by xxxxx"><img src="images/build/03.jpg" width="960" height="641" data-aos="fade-up"/></a>
+  <a href="images/build/04.jpg" data-fancybox="gallery" data-caption="建筑摄影<br>by xxxxx"><img src="images/build/04.jpg" width="960" height="640" data-aos="fade-up"/></a>
+</div>
+<div id="author">
+<img src="images/portrait/author.jpg" width="90" height="90" />
+<p>xxxx</p>
+<p>Photographer</p>
+</div>
+</div>
+<footer>
+Copyright &copy; XXX
+</footer>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用摄影记录生活</title>
+<link rel="stylesheet" type="text/css" href="css/jquery.flex-images.css">
+<link rel="stylesheet" type="text/css" href="css/skippr.css">
+<style>
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, lable, textarea, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+#header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color:#000;
+}
+#nav {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+#logo{
+	float:left;
+}
+#nav ul {
+	list-style-type: none;
+	padding-left: 240px;
+}
+#nav li {
+	float: left;
+}
+#nav li a:link, #nav a:visited {
+	color:#CCC;
+	display: block;
+	text-align: center;
+	padding: 10px 40px;
+	text-decoration: none;
+}
+#nav li a:hover, #nav li a.current {
+	color:#FFF;
+	text-decoration: none;
+}
+#login {
+	color: #FFF;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+	margin-top: 10px;
+	text-align: right;
+}
+#login a:link, #login a:visited {
+	color: #CCC;
+	text-decoration: none;
+}
+#login a:hover {
+	color:#FFF;
+}
+#banner{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.title {
+	width: 50%;
+	padding: 50px 20px;
+	background-color: rgba(255,255,255,0.2);
+	color: #FFF;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+}
+.title h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.title h2 {
+	text-align: right;
+	font-weight: normal;
+}
+.chapter-title {
+	margin:50px 0;
+	font-family: "微软雅黑", "黑体", "宋体";
+	font-size: 32px;
+	text-align: center;
+}
+#container {
+	width: 1000px;
+	margin: 0 auto;
+}
+.item img{
+	transition: all 0.5s;
+}
+.item img:hover{
+	transform:scale(1.2);
+}
+footer{
+	color:#FFF;
+	background-color:#333;
+	text-align:center;
+	padding:50px 0;	
+}
+</style>
+</head>
+
+<body>
+<div id="header"> 
+  <div id="nav" class="clearfix">
+   <div id="logo">
+  	<a href="index.html"><img src="images/logo.png" width="80" height="40" /></a>
+  </div>
+    <ul  class="clearfix">
+       <li><a href="index.html">首页</a></li>
+      <li><a href="view.html">风景</a></li>
+      <li><a href="portrait.html">人像</a></li>
+      <li><a href="build.html">建筑</a></li>
+    </ul>
+    <div id="login"> <a href="#">登录</a> | <a href="#">注册</a> </div>
+  </div>
+</div>
+
+<div id="banner">
+    <div id="theTarget">
+        <div style="background-image: url(images/portrait/01.jpg)"></div>
+        <div style="background-image: url(images/portrait/05.jpg)"></div>
+        <div style="background-image: url(images/portrait/10.jpg)"></div>
+        <div style="background-image: url(images/portrait/13.jpg)"></div>
+        <div style="background-image: url(images/portrait/15.jpg)"></div>
+       
+    </div>   
+    <div class="title">
+    <h1>人像</h1>
+  </div> 
+</div>
+
+
+<div id="container"  class="flex-images">
+  <div class="item" data-w="800" data-h="600"> <a href="content2.html"><img src="images//portrait/01.jpg" /></a> </div>
+  <div class="item" data-w="466" data-h="640"> <img src="images/portrait/02.jpg" /> </div>
+  <div class="item" data-w="750" data-h="508"> <img src="images/portrait/03.jpg" /> </div>
+  <div class="item" data-w="600" data-h="599"> <img src="images/portrait/04.jpg" /> </div>
+  <div class="item" data-w="600" data-h="417"> <img src="images/portrait/05.jpg" /></div>
+  <div class="item" data-w="400" data-h="533"> <img src="images/portrait/06.jpg" /> </div>
+  <div class="item" data-w="500" data-h="751"> <img src="images/portrait/07.jpg" /> </div>
+  <div class="item" data-w="500" data-h="729"> <img src="images/portrait/08.jpg" /> </div>
+  <div class="item" data-w="690" data-h="626"> <img src="images/portrait/09.jpg" /></div>
+  <div class="item" data-w="1920" data-h="1440"> <img src="images/portrait/10.jpg" /></div>
+  <div class="item" data-w="690" data-h="1034"> <img src="images/portrait/11.jpg" /></div>
+  <div class="item" data-w="900" data-h="1161"> <img src="images/portrait/12.jpg" /></div>
+  <div class="item" data-w="1000" data-h="625"> <img src="images/portrait/13.jpg" width="1000" height="625" /></div>
+  <div class="item" data-w="627" data-h="818"> <img src="images/portrait/14.jpg" width="627" height="818" /></div>
+  <div class="item" data-w="900" data-h="674"> <img src="images/portrait/15.jpg" width="900" height="674" /> </div>
+  
+</div>
+
+
+<footer>
+Copyright &copy; XXX
+</footer>
+<script src="js/jquery-3.3.1.js"></script> 
+<script src="js/jquery.flex-images.js"></script> 
+<script src="js/skippr.js"></script>
+<script>
+ $('#container').flexImages({rowHeight: 300});
+</script>
+<script>
+$(document).ready(function(){
+    $("#theTarget").skippr();
+});
+</script>
+</body>
+</html>
